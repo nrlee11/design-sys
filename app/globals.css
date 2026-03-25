@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* 유틸리티 연결 */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-example-content: var(--example-content);
+  --color-example-content-foreground: var(--example-content-foreground);
+  --color-example-content2: var(--example-content2);
+  --color-example-content2-foreground: var(--example-content2-foreground);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-hover-foreground: var(--primary-hover-foreground);
+  --color-disabled: var(--disabled);
+  --color-disabled-foreground: var(--disabled-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-brand-blue1: var(--brand-blue1);
+  --color-brand-blue1-foreground: var(--brand-blue1-foreground);
+  --color-brand-blue2: var(--brand-blue2);
+  --color-brand-blue2-foreground: var(--brand-blue2-foreground);
+  --color-brand-blue3: var(--brand-blue3);
+  --color-brand-blue3-foreground: var(--brand-blue3-foreground);
+  --color-brand-blue4: var(--brand-blue4);
+  --color-brand-blue4-foreground: var(--brand-blue4-foreground);
+  --color-brand-blue5: var(--brand-blue5);
+  --color-brand-blue5-foreground: var(--brand-blue5-foreground);
+
+  /* Font family */
+  --font-sans: var(--font-sans-base);
+  --font-mono: var(--font-mono-base);
+
+  /* Font size */
+  --text-xs: var(--font-size-xs);
+  --text-sm: var(--font-size-sm);
+  --text-base: var(--font-size-md);
+  --text-lg: var(--font-size-lg);
+  --text-xl: var(--font-size-xl);
+  --text-2xl: var(--font-size-2xl);
+  --text-3xl: var(--font-size-3xl);
+  --text-4xl: var(--font-size-4xl);
+
+  /* Line height */
+  --leading-tight: var(--line-height-tight);
+  --leading-normal: var(--line-height-normal);
+  --leading-loose: var(--line-height-loose);
+
+  /* Font weight */
+  --font-weight-light: var(--font-weight-light);
+  --font-weight-regular: var(--font-weight-regular);
+  --font-weight-medium: var(--font-weight-medium);
+  --font-weight-semibold: var(--font-weight-semibold);
+  --font-weight-bold: var(--font-weight-bold);
+
+  /* Radius */
+  --radius: var(--radius-base);
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    @apply outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
